@@ -1,0 +1,773 @@
+/* réinitialisation des marges par défaut pour tous les éléments */
+*{
+    margin: 0;
+}
+@font-face {/* déclare une police personnalisée */
+    font-family: 'Arlon Black';
+    src: url('/public/font/arlon-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+sup{ /*fait monter le $ et lui donne la bonne taille*/
+    font-size:20px;
+    vertical-align: top;
+    position: relative;
+    top: 0.6em;
+}
+a{ /*donne une couleur aux liens */
+    color: #695AA6;
+}
+section{ /* applique la police Poppins pour toutes les sections */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+header{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 1)), /*Gradient pour reproduire le fondu avec l'image en fond*/
+    url("../img/header.jpg");
+    background-position-y: 37%;
+    background-position: center;
+    background-size: cover;
+    height: 40em;
+    filter: hue-rotate(18deg); /* applique une teinte */
+    font-family: 'Arlon Black', sans-serif;
+}
+
+
+/* ligne de la navbar */
+nav{
+    display: flex; /* affiche les éléments en ligne */
+    color: white;
+    gap: 27em; /* espace entre les éléments */
+    font-family: 'Arlon Black', sans-serif;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2.5em;
+}
+nav h1{ /* placement du titre nouille */
+    font-weight: 900;
+    padding-left: 2.5em;
+    padding-top: 1em;
+}
+
+.about_header{ /* navbar */
+    display: flex;
+    gap: 1.1em;
+    font-size: smaller;
+    padding-top: 2.5em;
+}
+
+
+
+/* header texte bas */
+.intro{
+    display: grid;
+    justify-content: center;
+    padding-top: 10em;
+    font-family: 'Arlon Black', sans-serif;
+}
+/* mise en forme des textes */
+.intro h1{
+    font-weight: 800;
+    color: #585960;
+    font-size: 3em;
+}
+.intro h2{
+    font-size: 5em;
+    font-weight: 900;
+    color: #42464D;
+}
+
+.intro h3{
+    font-weight: 100;
+    color: #3C3C3E;
+    letter-spacing: .5em;
+    font-family: 'Poppins', sans-serif;
+}
+/* mise en forme du boutton */
+.intro button{
+    background-color: #695AA6; 
+    filter: hue-rotate(-18deg); /* on met le filtre opposé à celui du header pour conserver la bonne couleur du bouton */
+    color: white;
+    border-radius: 2em;
+    border: none;
+    width: 9em;
+    height: 3em;
+    margin-top: 2em;
+}
+
+
+/* section1 */
+.section1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    font-weight: 100;
+}
+
+.section1 img{/* taille de l'image de présentation */
+    height: 25em; 
+}
+
+.s1_div{
+    width: 50%;
+}
+.s1_div p{
+    color: #6F6F6F;
+    padding-bottom: 2em;
+}
+.s1_line{
+    line-height: 80%;
+}
+.s1_div h2{
+    font-family: 'Arlon Black', sans-serif;
+    color: #695AA6;
+    font-size: 2em;
+    line-height: 0%;
+    padding-bottom: 2em;
+}
+.s1_div button{ /* bouton de téléchargement dans la section 1 */
+    border: #7365ab solid 1px;
+    border-radius: 2em;
+    height: 3em;
+    width: 10em;
+    background: none;
+    color: #695AA6;
+}
+
+
+/* section 2 */
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Arlon Black', sans-serif;
+    padding-top: 10em;
+}
+.section2 h2{
+    padding-top: none;
+}
+.s2_txt{
+    line-height: 1;
+}
+.s2_txt p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100;
+    color: #6F6F6F;
+}
+.s2_txt h2{
+    color: #695AA6;
+    font-family: 'Arlon Black', sans-serif;
+    padding-bottom: 2em;
+}
+/* section 2 grid */
+.s2_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* définit une grille de 4 colonnes */
+    width: 80%;
+    padding-left: 10%;
+    align-items: center;
+}
+
+.s2_grid > div {/* on crée des carrés dans lequel on met une image et un texte qui dépasse du carré qu'on va cacher */
+    border: #DEE2E6 solid 1px;
+    height: 13em;
+    width: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #695AA6;
+    font-size: larger;
+    gap: 1.5em;
+    margin: 0;
+    overflow: hidden; /* cache le texte */
+}
+
+.s2_grid img { /* mise en forme de l'image */
+    margin-top: 8em;
+    height: 25%;
+    transition: transform 2s; /* on inclue l'image dans la transition */
+    position: relative; /* on donne une position afin de pouvoir utiliser la propriété top */
+    top: 1.5em;
+}
+
+.s2_grid p {
+    padding-top: 1em;
+    transition: transform 2s; /* on inclue le texte dans la transition et on précise qu'on veut un changement sur la propriété transform*/
+}
+
+.animation {
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    font-size: smaller;
+    color: #6F6F6F;
+    text-align: center;
+}
+/* animation des 3 éléments indidivduellement */
+.s2_grid > div:hover img {
+    transform: translateY(-10.5em);
+}
+
+.s2_grid > div:hover .txt {
+    transform: translateY(-10.5em);
+}
+.s2_grid > div:hover .animation {
+
+    transform: translateY(-10.5em);
+}
+
+/* section 3 */
+
+.section3{
+    text-align: center;
+    padding-top: 10em;
+}
+
+/* section 3 texte */
+.s3_txt{
+    padding-bottom: 2em;
+    font-family: 'Arlon Black', sans-serif;
+    color: #695AA6;
+}
+.s3_txt p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100;
+    color: #6F6F6F;
+}
+
+/* section 3 grid */
+.s3_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* grille de 3 colonnes */
+    padding-left: 10%;
+    width: 80%;
+}
+
+.s3_grid img{
+    width: 90%;
+}
+
+/* section4 4 */
+
+.section4{
+    text-align: center;
+    padding-top: 10em;
+    line-height: 2.5;
+}
+
+/* section 4 texte */
+.s4_txt{
+    padding-bottom: 2em;
+    font-family: 'Arlon Black', sans-serif;
+    color: #695AA6;
+}
+.s4_txt p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100;
+    color: #6F6F6F;
+}
+
+/* section 4 grid */
+.s4_grid{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr; /* grille de 3 colonnes */
+    width: 80%;
+    padding-left: 10%;
+
+}
+
+.s4_grid img{
+    height: 10%;
+}
+
+/* section 4 intérieur des cel du grid */
+.s4_grid_cel{
+    border: #DEE2E6 solid 1px;
+    height: 35em;
+    align-content: center;
+}
+
+.s4_grid_cel h2{
+    color: #695AA6;
+    font-family: 'Arlon Black', sans-serif;
+    font-size: 2em;
+}
+
+.s4_grid_cel p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100;
+    color: #6F6F6F;
+}
+
+.price{
+    font-size: 2em;
+    color: #4D5053;
+}
+
+.s4_grid_cel button{
+    background-color: #695AA6;
+    color: white;
+    border: none;
+    height: 3em;
+    width: 7em;
+}
+/* section 5 */
+.section5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    height: 8em;
+    background-color: #695AA6;
+    margin-top: 5em;
+    color: white;
+}
+
+.section5 h3{
+    font-family: 'Arlon Black', sans-serif;
+}
+.section5 button{
+    font-family: 'Arlon Black', sans-serif;
+    letter-spacing: .1em; /* espacement entre les lettres */
+    font-size: 1em;
+    height: 3em;
+    width: 6em;
+    border-radius: 2px;
+    border: none;
+    background-color: #fff;
+}
+/* section 6 */
+.section6{
+    text-align: center;
+}
+
+.s6_txt{
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+.s6_txt h2{
+    padding-bottom: 2em;
+    font-family: 'Arlon Black', sans-serif;
+    color: #695AA6;
+}
+.s6_txt p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100;
+    color: #6F6F6F;
+}
+.s6_grid {
+    display: flex;
+    gap: 4em;
+    padding-left: 10%;
+    width: 80%;
+}
+.p_men, .p_woman {
+    position: relative;
+    border: #DEE2E6 solid 1px;
+    text-align: left;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.p_men img, .p_woman img { /* positionnement des photos et arrondissement */
+    border-radius: 100%;
+    height: 5em; 
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.p_men p, .p_woman p{
+    padding-bottom: 1em;
+}
+.p_men strong, .p_woman strong{
+    font-family: 'Arlon Black', sans-serif;
+    color: #695AA6;
+}
+
+/* section 7 */
+.section7{
+    padding-bottom: 2em;
+    text-align: center;
+}
+.s7_title{
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+
+.s7_title h2{
+    padding-bottom: 2em;
+    font-family: 'Arlon Black', sans-serif;
+    color: #695AA6;
+}
+.s7_title p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100;
+    color: #6F6F6F;
+}
+
+.s7_grid {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 10%;
+    gap: 2em;
+}
+/* profils en display grid */
+.profile {
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    border: #DEE2E6 solid 1px;
+}
+.profile span{ /*coeur en rose */
+    color:#F68CAF;
+}
+.profile img {
+    height: 20em; 
+    width: 19.5em;
+    object-fit: cover; /* ajuste l'image à la taille du container */
+}
+
+.icon_msg{ /* l'image étant utilisée en png */
+    transform: translateY(6em);
+    font-size: .1em;
+}
+
+.profile p {
+    font-size: small; 
+}
+
+.profile h3{
+    font-family: 'Arlon Black', sans-serif;
+    color: #695AA6;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.s7_txt>p{
+    padding-bottom: 1em;
+}
+
+/* section 8 */
+.section8{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4em;
+}
+.s8_txt h2{
+    padding-bottom: 2em;
+    font-family: 'Arlon Black', sans-serif;
+    color: #695AA6;
+}
+.s8_txt p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100;
+    color: #6F6F6F;
+}
+.nav_bottom{
+    display: flex;
+    justify-content: center;
+    font-family: 'Arlon Black', sans-serif;
+    gap: 28em;
+    padding-bottom: 2em;
+}
+
+.nav_bottom h1{
+    color: #695AA6;
+}
+
+.nav_bottom2 {
+    display: flex;
+    gap: 2em;
+    color: #6C757D;
+}
+
+.cross{/* croix des navbar */
+    font-weight: 900;
+}
+/* scetion 9 */
+.section9{
+    padding-top: 2em;
+    border-top: #DEE2E6 solid 1px;
+    padding-bottom: 2em;
+}
+
+.section9 textarea{
+    width: 50%;
+    height: 12em;
+    border-radius: .5em;
+    border-color: #CED4DA;
+    background-color: #FCFCFC;
+}
+
+.section9 button{
+    color: #695AA6;
+    border: #695AA6 solid 1px;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 2em;
+}
+
+/* footer */
+footer{
+    margin: 1em;
+    border-top: #DEE2E6 solid 1px;
+    padding-top: 1em;
+    display: flex;
+    color: hsl(217, 8%, 30%);
+    gap: 58%;
+    margin-left: 10%;
+    width: 80%;
+}
+
+footer p{
+    line-height: 3em;
+}
+
+.footer_logo{
+    display: flex;
+    height: 2.5em;
+    gap: .3em; 
+}
+
+
+
+@media (max-width: 426px) {/* gestion des petits écrans en responsive, essentiellment du redimensionnement*/
+    .intro {
+        display: flex;
+        justify-content: center;
+
+    }
+    nav {
+        flex-direction: column-reverse;
+        padding: .5em;
+        font-size: .8em;
+        text-align: center;
+    }
+
+    nav h1{
+        padding-left: 0;
+    }
+
+    .intro h1, .intro h2, .intro h3 {
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .s1_div, .section9 textarea {
+        width: 90%;
+    }
+
+    .s2_grid {
+        grid-template-columns: 1fr !important; /*force le redimensionnement en passant à une colonne */
+        grid-template-rows: repeat(4fr);
+
+    }
+    .s3_grid, .s4_grid{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .s4_grid_cel {
+        height: 33em;
+        line-height: 2.5em;
+        width: 15em;
+    }
+    
+    .price{
+        margin-bottom: 1em;
+    }
+
+    sup{
+        top: -0.2em;
+    }
+    .section5{
+       padding: 1em;
+    }
+    .profile {
+        grid-template-columns: 1fr;
+    }
+
+    .nav_bottom{
+        display: block;
+        flex-direction: column;
+    }
+    .nav_bottom2{
+        font-size: .7em;
+        justify-content: center;
+    }
+    /* on fait passer les élements les uns en dessous qu'ils puissent s'adapter à la petite largeur de l'écran */
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer>div>p{
+        font-size: 5px;
+    }
+    .footer_logo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer>div{
+        gap: 15%;
+    }
+    .section9 button {
+        margin-top: 1em;
+    }
+    
+   
+}
+/* même chose pour une taille d'écran plus grande */
+
+@media (max-width: 768px) {
+    nav {
+        align-items: center;
+        padding: 1em;
+        gap: 1.5em;
+    }
+
+
+    .intro h2,
+     .intro h3,
+    .intro h1  {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    header{
+        height: auto;
+        background-position-y: 80%;
+        background-position: center;
+        background-size: cover;
+    }
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+
+    .section1 img {
+        height: 15em;
+    }
+
+    .s2_grid {
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        gap: 4em;
+    }
+
+    .s3_grid{
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .s4_grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    sup{
+        bottom: -0.1em;
+    }
+
+    .s6_grid {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .profile{
+        grid-template-columns: 1fr;
+    }
+    .profile img[alt="pro"]{
+        width: 100%;
+    }
+
+    .nav_bottom{
+        gap: 2em;
+    }
+    .nav_bottom2{
+        gap: 1em;
+    }
+
+    footer>div>p{
+        font-size: 10px;
+    }
+    footer>div{
+        gap:25%;
+    }
+    .footer_logo img{
+
+    height: 2em;
+    gap: 1em;
+    }
+}
+/* même chose pour une taille d'écran plus grande */
+@media (max-width: 1024px) {
+    nav {
+        gap: 10em;
+    }
+    .intro{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .intro h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .intro h2, .intro h3 {
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    .s2_grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 4em;
+       
+
+    }
+
+    .s3_grid, .s4_grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2.5em;
+    }
+    .s4_grid{
+        column-gap: 2.5em;
+    }
+
+    .nav_bottom{
+        gap: 10em;
+    }
+
+    .s7_grid {
+        align-items: center;
+    }
+
+    .section9 textarea {
+        width: 80%;
+    }
+    footer{
+        gap: 30%;
+    }
+
+
+}
