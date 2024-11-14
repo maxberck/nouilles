@@ -138,91 +138,89 @@ section{ /* applique la police Poppins pour toutes les sections */
 
 header{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 1)), /*Gradient pour reproduire le fondu avec l'image en fond*/
-    url("../img/header.jpg");
-    background-position-y: 37%;
-    background-size: cover;
-    height: 40em;
-    filter: hue-rotate(18deg); /* applique une teinte */
-    font-family: 'Arlon Bold', sans-serif;
+    url("../img/header.jpg"); /* Gradient combiné avec une image de fond */
+    background-position-y: 37%; /* Position verticale du fond */
+    background-size: cover; /* Le fond couvre tout le conteneur */
+    height: 40em; /* Hauteur du header */
+    filter: hue-rotate(18deg); /* Applique une teinte à l'image */
+    font-family: 'Arlon Bold', sans-serif; /* Utilise la police Arlon Bold */
 }
 
 
 /* ligne de la navbar */
 nav{
-    display: flex; /* affiche les éléments en ligne */
-    color: white;
-    gap: 27em; /* espace entre les éléments */
-    font-family: 'Arlon Bold', sans-serif;
-    font-weight: bolder;
-    justify-content: center;
-    align-items: center;
-    padding-right: 2.5em;
+    display: flex; /* Affiche les éléments en ligne */
+    color: white; /* Couleur blanche pour le texte */
+    gap: 27em; /* Espace entre les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    padding-right: 2.5em; /* Espace à droite pour aligner correctement */
 }
 nav h1{ /* placement du titre nouille */
-    font-weight: 900;
-    padding-left: 2.5em;
-    padding-top: 1em;
+    font-weight: 900; /* Rend le titre très gras */
+    padding-left: 2.5em; /* Décale le titre à gauche */
+    padding-top: 1em; /* Ajoute un espace en haut */
 }
 
 .about_header{ /* navbar */
     display: flex;
-    gap: 1.1em;
-    font-size: smaller;
-    padding-top: 2.5em;
+    gap: 1.1em; /* Espace entre les éléments */
+    font-size: smaller; /* Réduit la taille du texte */
+    padding-top: 2.5em; /* Ajoute un espace en haut */
 }
 
 
 
 /* header texte bas */
 .intro{
-    display: grid;
-    justify-content: center;
-    padding-top: 10em;
-    font-family: 'Arlon Bold', sans-serif;
+    display: grid; /* Utilise une grille pour centrer les éléments */
+    justify-content: center; /* Centre horizontalement les éléments */
+    padding-top: 10em; /* Ajoute un grand espace en haut */
+    font-family: 'Arlon Bold', sans-serif; /* Utilise la police Arlon Bold */
 }
 /* mise en forme des textes */
 .intro h1{
-    font-weight: 800;
-    color: #585960;
-    font-size: 3em;
-    font-family: 'Arlon Black';
+    font-weight: 800; /* Poids de la police élevé */
+    color: #585960; /* Couleur grise */
+    font-size: 3em; /* Taille de la police */
+    font-family: 'Arlon Black'; /* Police Arlon Black */
 }
-.intro h2{
-    font-size: 5em;
-    font-weight: 900;
-    color: #42464D;
-    line-height: 1.2em;
-    font-family: 'Arlon Black';
+.intro h2 {
+    font-size: 5em; /* Taille importante pour les sous-titres */
+    font-weight: 900; /* Texte très gras */
+    color: #42464D; /* Couleur sombre */
+    line-height: 1.2em; /* Espacement entre les lignes */
+    font-family: 'Arlon Black'; /* Police Arlon Black */
 }
 
-.intro h4{
-    font-weight: 100;
-    color: #3C3C3E;
-    letter-spacing: .3em;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
-    padding-top: .2em;
+.intro h4 {
+    font-weight: 100; /* Texte léger */
+    color: #3C3C3E; /* Couleur grise foncée */
+    letter-spacing: .3em; /* Espacement entre les lettres */
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    font-size: 1.5em; /* Taille moyenne */
+    padding-top: .2em; /* Ajoute un espace en haut */
 }
 /* mise en forme du boutton */
 .intro button{
     background-color: #695AA6; 
     filter: hue-rotate(-18deg); /* on met le filtre opposé à celui du header pour conserver la bonne couleur du bouton */
-    color: white;
-    border-radius: 2em;
-    border: none;
-    width: 9em;
-    height: 2.7em;
-    margin-top: 2em;
-    font-size: 1em;
+    color: white; /* Texte en blanc */
+    border-radius: 2em; /* Bord arrondi */
+    border: none; /* Aucun bord */
+    width: 9em; /* Largeur fixe */
+    height: 2.7em; /* Hauteur fixe */
+    margin-top: 2em; /* Espace au-dessus du bouton */
+    font-size: 1em; /* Taille de police par défaut */
 }
 
 
-/* section1 */
-.section1{
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
-    font-weight: 100;
+/* Section 1 */
+.section1 {
+    display: flex; /* Affiche le contenu en ligne */
+    justify-content: center; /* Centre horizontalement les éléments */
+    margin-top: 2em; /* Ajoute un espace en haut */
+    font-weight: 100; /* Texte léger */
 }
 
 .section1 img{/* taille de l'image de présentation */
@@ -230,91 +228,95 @@ nav h1{ /* placement du titre nouille */
 }
 
 .s1_div{
-    width: 50%;
-    padding-top: 3em;
+    width: 50%; /* Prend 50% de la largeur */
+    padding-top: 3em; /* Ajoute un espace en haut */
 }
 .s1_line2{
     padding-bottom: 2em;
 }
 .s1_div p{
-    color: #6F6F6F;
-    font-size: .98em;
-    font-weight: 300;
+    color: #6F6F6F; /* Couleur grise */
+    font-size: .98em; /* Taille de police légèrement réduite */
+    font-weight: 300; /* Texte léger */
 }
 .s1_line{
-    line-height: 80%;
-    padding-bottom: 2em;
+    line-height: 80%; /* Réduit l'espacement entre les lignes */
+    padding-bottom: 2em; /* Ajoute un espace en bas */
 }
 
 .s1_div h2{
-    font-family: 'Arlon Bold', sans-serif;
-    color: #695AA6;
-    font-size: 2em;
-    line-height: 0%;
-    padding-bottom: 1.3em;
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    color: #695AA6; /* Couleur violette */
+    font-size: 2em; /* Taille de police moyenne */
+    line-height: 0%; /* Réduit l'espace sous le texte */
+    padding-bottom: 1.3em; /* Ajoute un espace en bas */
 }
 .s1_div button{ /* bouton de téléchargement dans la section 1 */
-    border: #7365ab solid 1px;
-    border-radius: 2em;
-    height: 2.5em;
-    width: 8em;
-    background: none;
-    color: #695AA6;
-    margin-top: .5em;
-    font-size: medium;
+    border: #7365ab solid 1px; /* Bordure violette claire */
+    border-radius: 2em; /* Bord arrondi */
+    height: 2.5em; /* Hauteur fixe */
+    width: 8em; /* Largeur fixe */
+    background: none; /* Fond transparent */
+    color: #695AA6; /* Texte violet */
+    margin-top: .5em; /* Espace au-dessus du bouton */
+    font-size: medium; /* Taille moyenne */
 }
 
 
 /* section 2 */
 
 .section2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Arlon Bold', sans-serif;
-    padding-top: 10em;
+    display: flex; /* Affiche les éléments en ligne */
+    flex-direction: column; /* Empile les éléments verticalement */
+    text-align: center; /* Centre le texte */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    padding-top: 10em; /* Ajoute un espace en haut */
 }
-.section2 h2{
-    padding-top: none;
+.section2 h2 {
+    padding-top: none; /* Pas d'espace en haut */
 }
-.s2_txt{
-    line-height: 1;
+
+.s2_txt {
+    line-height: 1; /* Réduit l'espacement entre les lignes */
 }
-.s2_txt p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 100;
-    color: #6F6F6F;
-    padding-bottom: .5em;
+
+.s2_txt p {
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    font-size: 100; /* Taille par défaut */
+    color: #6F6F6F; /* Couleur grise */
+    padding-bottom: .5em; /* Espace en bas */
 }
-.s2_txt h2{
-    color: #695AA6;
-    font-family: 'Arlon Bold', sans-serif;
-    padding-bottom: 2em;
-    font-size: 2.3em;
+
+.s2_txt h2 {
+    color: #695AA6; /* Couleur violette */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    padding-bottom: 2em; /* Ajoute un espace en bas */
+    font-size: 2.3em; /* Taille de police */
 }
 /* section 2 grid */
 .s2_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* définit une grille de 4 colonnes */
-    width: 80%;
-    padding-left: 10%;
-    align-items: center;
+    display: grid; /* Affiche les éléments en grille */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Quatre colonnes égales */
+    width: 80%; /* Largeur réduite à 80% */
+    padding-left: 10%; /* Ajoute un espace à gauche */
+    align-items: center; /* Centre verticalement les éléments */
 }
 
-.s2_grid > div { /* On crée des carrés dans lequel on met une image et un texte qui dépasse du carré qu'on va cacher */
+/* Carrés de la grille dans la section 2 */
+.s2_grid > div {
     border: #DEE2E6 solid 1px;
-    height: 250px; 
-    width: 250px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #695AA6;
-    font-size: 18px;
-    letter-spacing: -.3px;
-    gap: 24px; 
-    margin: 0;
-    overflow: hidden; /* Cache le texte */
+    height: 250px; /* Hauteur fixe */
+    width: 250px; /* Largeur fixe */
+    display: flex; /* Affiche le contenu en ligne */
+    justify-content: center; /* Centre horizontalement les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    flex-direction: column; /* Empile les éléments verticalement */
+    color: #695AA6; /* Couleur violette */
+    font-size: 18px; /* Taille de police */
+    letter-spacing: -.3px; /* Réduit légèrement l'espacement entre les lettres */
+    gap: 24px; /* Espace entre les éléments */
+    margin: 0; /* Pas d'espace externe */
+    overflow: hidden; /* Cache tout ce qui dépasse */
 }
 
 .s2_grid img { /* Mise en forme de l'image */
@@ -324,508 +326,543 @@ nav h1{ /* placement du titre nouille */
     position: relative; /* On donne une position afin de pouvoir utiliser la propriété top */
     top: 32px; /* Augmenté pour correspondre à la nouvelle disposition */
 }
-.s2_grid h3{
-    padding-top: 24px;
-    transition: transform 2s;
-    font-weight: 100;
+.s2_grid h3 {
+    padding-top: 24px; /* Ajoute un espace en haut */
+    transition: transform 2s; /* Applique une transition fluide sur la transformation */
+    font-weight: 100; /* Poids léger pour le texte */
 }
 
 .s2_grid p {
-    padding-top: 24px;
-    transition: transform 2s;
-     /* On inclut le texte dans la transition et on précise qu'on veut un changement sur la propriété transform */
+    padding-top: 24px; /* Ajoute un espace en haut */
+    transition: transform 2s; /* Ajoute une transition fluide à la transformation */
+    /* On inclut le texte dans la transition pour le déplacement */
 }
 
 .animation {
-    font-family: 'Poppins', sans-serif;
-    width: 90%;
-    font-size: smaller;
-    color: #6F6F6F;
-    text-align: center;
-    margin-top: 50px;
+    font-family: 'Poppins', sans-serif; /* Police Poppins pour la description */
+    width: 90%; /* Largeur de 90% */
+    font-size: smaller; /* Texte légèrement réduit */
+    color: #6F6F6F; /* Couleur grise */
+    text-align: center; /* Centre le texte */
+    margin-top: 50px; /* Ajoute un espace en haut */
 }
 /* Animation des 3 éléments individuellement */
 .s2_grid > div:hover img {
-    transform: translateY(-185px); 
+    transform: translateY(-185px); /* Déplace l'image vers le haut */
 }
 
 .s2_grid > div:hover .txt {
-    transform: translateY(-185px);
+    transform: translateY(-185px); /* Déplace le texte vers le haut */
 }
 
 .s2_grid > div:hover .animation {
-    transform: translateY(-185px); 
-} 
+    transform: translateY(-185px); /* Déplace la description vers le haut */
+}
 /* section 3 */
 
-.section3{
-    text-align: center;
-    padding-top: 10em;
+.section3 {
+    text-align: center; /* Centre le texte */
+    padding-top: 10em; /* Ajoute un espace en haut */
 }
 
 /* section 3 texte */
-.s3_txt h2{
-    padding-bottom: 2em;
-    font-family: 'Arlon Bold', sans-serif;
-    color: #695AA6;
-    font-size: 2.3em;
-    
+.s3_txt h2 {
+    padding-bottom: 2em; /* Ajoute un espace en bas */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    color: #695AA6; /* Couleur violette */
+    font-size: 2.3em; /* Taille de police */
 }
-.s3_txt p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 100;
-    color: #6F6F6F;
+
+.s3_txt p {
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    font-size: 100; /* Taille par défaut */
+    color: #6F6F6F; /* Couleur grise */
 }
 
 /* section 3 grid */
-.s3_grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* grille de 3 colonnes */
-    padding-left: 10%;
-    width: 80%;
+.s3_grid {
+    display: grid; /* Affiche les éléments en grille */
+    grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
+    padding-left: 10%; /* Ajoute un espace à gauche */
+    width: 80%; /* Largeur de 80% */
 }
 
-.s3_grid img{
-    width: 90%;
+.s3_grid img {
+    width: 90%; /* Largeur des images */
 }
 
 /* section4 4 */
 
-.section4{
-    text-align: center;
-    padding-top: 9em;
+.section4 {
+    text-align: center; /* Centre le texte */
+    padding-top: 9em; /* Ajoute un espace en haut */
 }
 
-/* section 4 texte */
-.s4_txt h2{
-    padding-bottom: 2em;
-    font-family: 'Arlon Bold', sans-serif;
-    color: #695AA6;
-    font-size: 2.3em;
-}
-.s4_txt p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 100;
-    color: #6F6F6F;
+/* Texte de la section 4 */
+.s4_txt h2 {
+    padding-bottom: 2em; /* Ajoute un espace en bas */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    color: #695AA6; /* Couleur violette */
+    font-size: 2.3em; /* Taille de police */
 }
 
+.s4_txt p {
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    font-size: 100; /* Taille par défaut */
+    color: #6F6F6F; /* Couleur grise */
+}
 /* section 4 grid */
-.s4_grid{
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr; /* grille de 3 colonnes */
-    width: 80%;
-    padding-left: 10%;
-    line-height: 2.5;
-
+.s4_grid {
+    display: grid; /* Affiche les éléments en grille */
+    grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
+    width: 80%; /* Largeur de 80% */
+    padding-left: 10%; /* Ajoute un espace à gauche */
+    line-height: 2.5; /* Ajoute de l'espace entre les lignes */
 }
 
-.s4_grid img{
-    height: 13%;
+.s4_grid img {
+    height: 13%; /* Hauteur fixe des images */
 }
 
 /* section 4 intérieur des cel du grid */
-.s4_grid_cel{
-    border: #DEE2E6 solid 1px;
-    height: 37em;
-    align-content: center;
+.s4_grid_cel {
+    border: #DEE2E6 solid 1px; /* Bordure grise claire */
+    height: 37em; /* Hauteur fixe */
+    align-content: center; /* Centre le contenu */
 }
 
-.s4_grid_cel h2{
-    color: #695AA6;
-    font-family: 'Arlon Bold', sans-serif;
-    font-size: 2em;
+.s4_grid_cel h2 {
+    color: #695AA6; /* Couleur violette */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    font-size: 2em; /* Taille de police */
 }
 
-.s4_grid_cel p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 100;
-    color: #6F6F6F;
+.s4_grid_cel p {
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    font-size: 100; /* Taille par défaut */
+    color: #6F6F6F; /* Couleur grise */
 }
 
-.price{
-    font-size: 2em;
-    color: #4D5053;
-    font-weight: 500;
+.price {
+    font-size: 2em; /* Taille de police importante */
+    color: #4D5053; /* Couleur grise foncée */
+    font-weight: 500; /* Poids moyen */
 }
 
-.s4_grid_cel button{
-    background-color: #695AA6;
-    color: white;
-    border: none;
-    height: 3em;
-    width: 7em;
+.s4_grid_cel button {
+    background-color: #695AA6; /* Couleur de fond violette */
+    color: white; /* Texte en blanc */
+    border: none; /* Pas de bordure */
+    height: 3em; /* Hauteur fixe */
+    width: 7em; /* Largeur fixe */
 }
-/* section 5 */
-.section5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 28%;
-    height: 8em;
-    background-color: #695AA6;
-    margin-top: 5em;
-    color: white;
-}
-
-.section5 h3{
-    font-family: 'Arlon Bold', sans-serif;
-    padding-bottom: .6em;
-}
-.section5 button{
-    font-family: 'Arlon Bold', sans-serif;
-    letter-spacing: .1em; /* espacement entre les lettres */
-    font-size: 1.1em;
-    height: 3em;
-    width: 6em;
-    border-radius: 2px;
-    border: none;
-    background-color: #fff;
-    margin-right: 10em;
-}
-/* section 6 */
-.section6{
-    text-align: center;
-    padding-bottom: 5em;
+/* Section 5 */
+.section5 {
+    display: flex; /* Affiche le contenu en ligne */
+    justify-content: center; /* Centre horizontalement les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 28%; /* Grand espace entre le texte et le bouton */
+    height: 8em; /* Hauteur fixe */
+    background-color: #695AA6; /* Couleur de fond violette */
+    margin-top: 5em; /* Grand espace au-dessus de la section */
+    color: white; /* Texte en blanc */
 }
 
-.s6_txt{
-    padding-top: 5em;
-    padding-bottom: 1em;
+/* Texte de la section 5 */
+.section5 h3 {
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    padding-bottom: .6em; /* Ajoute un espace en bas */
 }
 
-.s6_txt h2{
-    padding-bottom: 2em;
-    font-family: 'Arlon Bold', sans-serif;
-    color: #695AA6;
-    font-size: 2.3em;
+/* Bouton de la section 5 */
+.section5 button {
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    letter-spacing: .1em; /* Espacement entre les lettres */
+    font-size: 1.1em; /* Taille du texte */
+    height: 3em; /* Hauteur fixe */
+    width: 6em; /* Largeur fixe */
+    border-radius: 2px; /* Bord arrondi */
+    border: none; /* Aucun bord */
+    background-color: #fff; /* Couleur de fond blanche */
+    margin-right: 10em; /* Espace à droite */
 }
-.s6_txt p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 100;
-    color: #6F6F6F;
+
+/* Section 6 */
+.section6 {
+    text-align: center; /* Centre le texte */
+    padding-bottom: 5em; /* Ajoute un espace en bas */
 }
+
+/* Texte de la section 6 */
+.s6_txt {
+    padding-top: 5em; /* Ajoute un espace en haut */
+    padding-bottom: 1em; /* Ajoute un espace en bas */
+}
+
+.s6_txt h2 {
+    padding-bottom: 2em; /* Ajoute un espace en bas */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    color: #695AA6; /* Couleur violette */
+    font-size: 2.3em; /* Taille de police */
+}
+
+.s6_txt p {
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    font-size: 100; /* Taille par défaut */
+    color: #6F6F6F; /* Couleur grise */
+}
+
+/* Grille de la section 6 */
 .s6_grid {
-    display: flex;
-    gap: 4em;
-    padding-left: 10%;
-    width: 80%;
+    display: flex; /* Affiche les éléments en ligne */
+    gap: 4em; /* Ajoute un espace entre les éléments */
+    padding-left: 10%; /* Ajoute un espace à gauche */
+    width: 80%; /* Largeur de 80% */
 }
+
+/* Cartes de témoignages */
 .p_men, .p_woman {
-    position: relative;
-    border: #DEE2E6 solid 1px;
-    text-align: left;
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-top: 2em;
-    padding-bottom: 1em;
+    position: relative; /* Position relative pour ajuster le contenu */
+    border: #DEE2E6 solid 1px; /* Bordure grise claire */
+    text-align: left; /* Aligne le texte à gauche */
+    padding: 2em 4em; /* Ajoute des espaces internes */
 }
 
-.p_men img, .p_woman img { /* positionnement des photos et arrondissement */
-    border-radius: 100%;
-    height: 5em; 
-    position: absolute;
-    left: -2.5em;
-    top: 50%;
-    transform: translateY(-50%)
+/* Images des témoignages */
+.p_men img, .p_woman img {
+    border-radius: 100%; /* Images circulaires */
+    height: 5em; /* Hauteur fixe */
+    position: absolute; /* Position absolue pour les placer précisément */
+    left: -2.5em; /* Décale l'image à gauche */
+    top: 50%; /* Centre verticalement l'image */
+    transform: translateY(-50%); /* Ajuste la position verticale */
 }
 
-.p_men p, .p_woman p{
-    padding-bottom: 1em;
-    color: #6F6F6F;
-}
-.p_men strong, .p_woman strong{
-    font-family: 'Arlon Bold', sans-serif;
-    color: #695AA6;
+/* Texte des témoignages */
+.p_men p, .p_woman p {
+    padding-bottom: 1em; /* Ajoute un espace en bas */
+    color: #6F6F6F; /* Couleur grise */
 }
 
-/* section 7 */
-.section7{
-    padding-bottom: 2em;
-    text-align: center;
-}
-.s7_title{
-    padding-top: 5em;
+/* Noms dans les témoignages */
+.p_men strong, .p_woman strong {
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    color: #695AA6; /* Couleur violette */
 }
 
-.s7_title h2{
-    padding-bottom: 2em;
-    font-family: 'Arlon Bold', sans-serif;
-    color: #695AA6;
-    font-size: 2.3em;
+
+/* Section 7 */
+.section7 {
+    padding-bottom: 2em; /* Ajoute un espace en bas */
+    text-align: center; /* Centre le contenu */
 }
-.s7_title p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 100;
-    color: #6F6F6F;
+
+.s7_title {
+    padding-top: 5em; /* Ajoute un grand espace en haut */
 }
-b{
-    font-weight: 600;
+
+/* Titre de la section 7 */
+.s7_title h2 {
+    padding-bottom: 2em; /* Ajoute un espace en bas */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    color: #695AA6; /* Couleur violette */
+    font-size: 2.3em; /* Taille de police importante */
 }
+
+.s7_title p {
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    font-size: 100; /* Taille par défaut */
+    color: #6F6F6F; /* Couleur grise */
+}
+
+/* Met en gras certains textes */
+b {
+    font-weight: 600; /* Poids moyen pour le texte */
+}
+
+/* Grille principale de la section 7 */
 .s7_grid {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    padding-left: 10%;
-    gap: 2em;
+    display: flex; /* Affiche les éléments en ligne */
+    flex-direction: column; /* Empile les éléments verticalement */
+    width: 80%; /* Largeur de la grille */
+    padding-left: 10%; /* Ajoute un espace à gauche */
+    gap: 2em; /* Ajoute un espace entre les éléments */
 }
 /* profils en display grid */
 .profile {
-    display: flex; 
-    text-align: left;
-    border: #DEE2E6 solid 1px;
-    gap: 2em;
+    display: flex; /* Affiche les éléments en ligne */
+    text-align: left; /* Aligne le texte à gauche */
+    border: #DEE2E6 solid 1px; /* Bordure grise claire */
+    gap: 2em; /* Espace entre l'image et le texte */
 }
 .profile span{ /*coeur en rose */
     color:#F68CAF;
 }
 .profile img {
-    height: 20em; 
-    width: 19.5em;
+    height: 20em; /* Hauteur fixe pour les images */
+    width: 19.5em; /* Largeur fixe pour les images */
     object-fit: cover; /* ajuste l'image à la taille du container */
 }
 
 .icon_msg{ /* l'image étant utilisée en png */
-    transform: translateY(6em);
-    font-size: .1em;
+    transform: translateY(6em); /* Décale verticalement l'icône */
+    font-size: .1em; /* Taille réduite de l'icône */
+
 }
 
 .profile p {
-    font-size: .9em; 
-    color: #6F6F6F;
+    font-size: .9em; /* Taille légèrement réduite */
+    color: #6F6F6F; /* Couleur grise */
 }
 
-.profile h3{
-    font-family: 'Arlon Bold', sans-serif;
-    color: #695AA6;
-    padding-top: 1.5em;
-    padding-bottom: .5em;
+/* Titres des profils */
+.profile h3 {
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    color: #695AA6; /* Couleur violette */
+    padding-top: 1.5em; /* Ajoute un espace en haut */
+    padding-bottom: .5em; /* Ajoute un espace en bas */
 }
 
-.s7_txt>p{
-    padding-bottom: 1em;
+/* Texte supplémentaire des profils */
+.s7_txt > p {
+    padding-bottom: 1em; /* Ajoute un espace en bas */
 }
 
-/* section 8 */
-.section8{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 4em;
-}
-.s8_txt h2{
-    padding-bottom: 1em;
-    font-family: 'Arlon Bold', sans-serif;
-    color: #695AA6;
-    font-size: 2.3em;
-
-}
-.s8_txt p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 100;
-    color: #6F6F6F;
-}
-.nav_bottom{
-    display: flex;
-    align-content: center;
-    font-family: 'Arlon Bold', sans-serif;
-    gap: 34em;
-    padding-bottom: 1em;
+/* Section 8 */
+.section8 {
+    display: flex; /* Affiche les éléments en ligne */
+    flex-direction: column; /* Empile les éléments verticalement */
+    text-align: center; /* Centre le texte */
+    padding-top: 4em; /* Ajoute un espace en haut */
 }
 
-.nav_bottom h1{
-    color: #695AA6;
-    font-size: 2em;
-    margin-left: 3em;
+/* Texte principal de la section 8 */
+.s8_txt h2 {
+    padding-bottom: 1em; /* Ajoute un espace en bas */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    color: #695AA6; /* Couleur violette */
+    font-size: 2.3em; /* Taille de police importante */
+}
+
+.s8_txt p {
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    font-size: 100; /* Taille par défaut */
+    color: #6F6F6F; /* Couleur grise */
+}
+
+/* Navigation de bas de page */
+.nav_bottom {
+    display: flex; /* Affiche les éléments en ligne */
+    align-content: center; /* Centre les éléments verticalement */
+    font-family: 'Arlon Bold', sans-serif; /* Police Arlon Bold */
+    gap: 34em; /* Grand espace entre les colonnes */
+    padding-bottom: 1em; /* Ajoute un espace en bas */
+}
+
+.nav_bottom h1 {
+    color: #695AA6; /* Couleur violette */
+    font-size: 2em; /* Taille de police importante */
+    margin-left: 3em; /* Décale le titre à gauche */
 }
 
 .nav_bottom2 {
-    display: flex;
-    gap: 1.5em;
-    color: #6C757D;
-    padding-top: 1em;
+    display: flex; /* Affiche les éléments en ligne */
+    gap: 1.5em; /* Ajoute un espace entre les éléments */
+    color: #6C757D; /* Couleur grise claire */
+    padding-top: 1em; /* Ajoute un espace en haut */
 }
 
 .cross{/* croix des navbar */
     font-weight: 900;
 }
-/* scetion 9 */
-.section9{
-    padding-top: .5em;
-    border-top: #F9F9FA solid 1px;
-    padding-bottom: 2em;
+/* Section 9 */
+.section9 {
+    padding-top: .5em; /* Ajoute un léger espace en haut */
+    border-top: #F9F9FA solid 1px; /* Bordure grise claire en haut */
+    padding-bottom: 2em; /* Ajoute un espace en bas */
 }
 
-.section9 textarea{
-    width: 50%;
-    height: 8em;
-    border-radius: .5em;
-    border-color: #CED4DA;
-    background-color: #FCFCFC;
-    font-family: 'Poppins', sans-serif;
-    padding: .6em;
-    font-size: 1em;
-
+/* Zone de texte du formulaire */
+.section9 textarea {
+    width: 50%; /* Largeur de 50% */
+    height: 8em; /* Hauteur fixe */
+    border-radius: .5em; /* Coins arrondis */
+    border-color: #CED4DA; /* Couleur de la bordure grise claire */
+    background-color: #FCFCFC; /* Fond gris très clair */
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+    padding: .6em; /* Ajoute un espace interne */
+    font-size: 1em; /* Taille de police standard */
 }
 
-.section9 button{
-    color: #695AA6;
-    border: #695AA6 solid 1px;
-    border-radius: 3px;
-    background-color: #fff;
-    height: 2.5em;
-    width: 8em;
-    margin-top: 1.7em;
-    margin-bottom: 2em;
-    font-size: 1em;
+/* Bouton du formulaire */
+.section9 button {
+    color: #695AA6; /* Texte violet */
+    border: #695AA6 solid 1px; /* Bordure violette */
+    border-radius: 3px; /* Coins légèrement arrondis */
+    background-color: #fff; /* Fond blanc */
+    height: 2.5em; /* Hauteur fixe */
+    width: 8em; /* Largeur fixe */
+    margin-top: 1.7em; /* Espace au-dessus du bouton */
+    margin-bottom: 2em; /* Espace en bas */
+    font-size: 1em; /* Taille de police standard */
 }
 
-/* footer */
-footer{
-    margin: 1em;
-    border-top: #DEE2E6 solid 1px;
-    padding-top: 1em;
-    display: flex;
-    color: hsl(217, 8%, 30%);
-    gap: 58%;
-    margin-left: 10%;
-    width: 80%;
+
+/* Footer */
+footer {
+    margin: 1em; /* Ajoute un espace autour du footer */
+    border-top: #DEE2E6 solid 1px; /* Bordure grise claire en haut */
+    padding-top: 1em; /* Ajoute un espace en haut */
+    display: flex; /* Affiche les éléments en ligne */
+    color: hsl(217, 8%, 30%); /* Couleur de texte gris foncé */
+    gap: 58%; /* Grand espace entre les colonnes */
+    margin-left: 10%; /* Décale le footer à gauche */
+    width: 80%; /* Largeur réduite à 80% */
 }
 
-footer p{
-    line-height: 3em;
-    color: #6C757D;
-
+footer p {
+    line-height: 3em; /* Ajoute de l'espace entre les lignes */
+    color: #6C757D; /* Couleur grise claire */
 }
 
-.footer_logo{
-    display: flex;
-    height: 2.5em;
-    gap: .3em; 
-
+.footer_logo {
+    display: flex; /* Affiche les éléments en ligne */
+    height: 2.5em; /* Hauteur fixe */
+    gap: .3em; /* Ajoute un léger espace entre les logos */
 }
+
 
 
 
 @media (max-width: 426px) {/* gestion des petits écrans en responsive, essentiellment du redimensionnement*/
     .intro {
-        display: flex;
-        justify-content: center;
-
+        display: flex; /* Affiche les éléments en ligne */
+        justify-content: center; /* Centre horizontalement */
     }
+
     nav {
-        flex-direction: column;
-        padding: .5em;
-        font-size: .8em;
-        text-align: center;
+        flex-direction: column; /* Empile les éléments verticalement */
+        padding: .5em; /* Ajoute un léger espace interne */
+        font-size: .8em; /* Réduit la taille du texte */
+        text-align: center; /* Centre le texte */
     }
 
-    nav h1{
-        padding-left: 0;
+    nav h1 {
+        padding-left: 0; /* Supprime l'espacement gauche */
     }
 
     .intro h1, .intro h2, .intro h3 {
-        letter-spacing: normal;
-        text-align: center;
+        letter-spacing: normal; /* Réinitialise l'espacement entre les lettres */
+        text-align: center; /* Centre le texte */
     }
 
     .s1_div, .section9 textarea {
-        width: 90%;
+        width: 90%; /* Adapte la largeur à 90% */
     }
 
     .s2_grid {
         grid-template-columns: 1fr !important; /*force le redimensionnement en passant à une colonne */
-        grid-template-rows: repeat(4fr);
-
-    }
-    .s3_grid{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 80%;
-        padding-left: 15%;
-    }
-    #s3_cel{
-        grid-column: span 2;
-        justify-self: center;
-        width: 90% !important;
-        margin-top: 0 !important;
+        grid-template-rows: repeat(4fr); /* Définit 4 lignes */
     }
 
-    .s4_grid{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 80%;
-        align-items: center;
-        padding-bottom: 4em;
+    .s3_grid {
+        display: flex; /* Passe en flexbox */
+        flex-direction: column; /* Empile les éléments verticalement */
+        justify-content: center; /* Centre le contenu */
+        width: 80%; /* Réduit la largeur */
+        padding-left: 15%; /* Ajoute un espace à gauche */
+    }
+
+    #s3_cel {
+        grid-column: span 2; /* Étend sur 2 colonnes */
+        justify-self: center; /* Centre horizontalement */
+        width: 90% !important; /* Largeur fixe à 90% */
+        margin-top: 0 !important; /* Supprime la marge supérieure */
+    }
+
+    .s4_grid {
+        display: flex; /* Passe en flexbox */
+        flex-direction: column; /* Empile les éléments verticalement */
+        justify-content: center; /* Centre le contenu */
+        width: 80%; /* Largeur fixée à 80% */
+        align-items: center; /* Centre les éléments */
+        padding-bottom: 4em; /* Ajoute un espace en bas */
     }
 
     .s4_grid_cel {
-        height: 33em;
-        line-height: 2.5em;
-        width: 15em;
-    }
-    .s4_cel{
-        grid-column: span 2;
-        justify-self: center;
-        width: 15em !important;
+        height: 33em; /* Ajuste la hauteur */
+        line-height: 2.5em; /* Augmente l'espacement entre les lignes */
+        width: 15em; /* Largeur réduite */
     }
 
-    .section5{
-        font-size: small;
-        margin: 0;
-        padding-right: 10%;
-    }
-    .price{
-        margin-bottom: 1em;
+    .s4_cel {
+        grid-column: span 2; /* Étend sur 2 colonnes */
+        justify-self: center; /* Centre horizontalement */
+        width: 15em !important; /* Largeur fixée */
     }
 
-    sup{
-        top: -0.2em;
+    .section5 {
+        font-size: small; /* Réduit la taille de police */
+        margin: 0; /* Supprime les marges */
+        padding-right: 10%; /* Ajoute un espace à droite */
     }
-    .section5{
-       padding: 1em;
-       gap: 2em;
+
+    .price {
+        margin-bottom: 1em; /* Ajoute un espace en bas */
+    }
+
+    sup {
+        top: -0.2em; /* Ajuste légèrement la position verticale */
+    }
+
+    .section5 {
+        padding: 1em; /* Ajoute un léger padding */
+        gap: 2em; /* Espace entre les éléments */
     }
 
     .profile {
-        grid-template-columns: 1fr;
-    }
-    .section7{
-        margin-bottom: 0;
+        grid-template-columns: 1fr; /* Une seule colonne */
     }
 
-    .s8_txt{
-        margin-bottom: -2em;
+    .section7 {
+        margin-bottom: 0; /* Supprime la marge inférieure */
     }
-    .nav_bottom{
-        display: block;
-        flex-direction: column;
+
+    .s8_txt {
+        margin-bottom: -2em; /* Réduit la marge inférieure */
     }
-    .nav_bottom2{
-        font-size: .7em;
-        justify-content: center;
+
+    .nav_bottom {
+        display: block; /* Passe en bloc */
+        flex-direction: column; /* Empile les éléments verticalement */
     }
-    /* on fait passer les élements les uns en dessous qu'ils puissent s'adapter à la petite largeur de l'écran */
-    footer{
-        display: flex;
-        flex-direction: column;
+
+    .nav_bottom2 {
+        font-size: .7em; /* Taille de police réduite */
+        justify-content: center; /* Centre le texte */
     }
-    footer>div>p{
-        font-size: 5px;
+
+    footer {
+        display: flex; /* Passe en flexbox */
+        flex-direction: column; /* Empile les éléments verticalement */
     }
+
+    footer > div > p {
+        font-size: 5px; /* Réduit la taille de police */
+    }
+
     .footer_logo {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+        justify-content: center; /* Centre les logos */
     }
-    footer>div{
-        gap: 15%;
+
+    footer > div {
+        gap: 15%; /* Réduit l'espacement entre les colonnes */
     }
+
     .section9 button {
-        margin-top: 1em;
+        margin-top: 1em; /* Ajuste l'espacement au-dessus du bouton */
     }
-    
-   
 }
 /* même chose pour une taille d'écran plus grande */
 
