@@ -238,7 +238,8 @@ nav h1{ /* placement du titre nouille */
 }
 .s1_div p{
     color: #6F6F6F;
-    font-size: .95em;
+    font-size: .98em;
+    font-weight: 300;
 }
 .s1_line{
     line-height: 80%;
@@ -260,6 +261,7 @@ nav h1{ /* placement du titre nouille */
     background: none;
     color: #695AA6;
     margin-top: .5em;
+    font-size: medium;
 }
 
 
@@ -746,6 +748,7 @@ footer p{
         grid-column: span 2;
         justify-self: center;
         width: 90% !important;
+        margin-top: 0 !important;
     }
 
     .s4_grid{
@@ -753,7 +756,7 @@ footer p{
         flex-direction: column;
         justify-content: center;
         width: 80%;
-        padding-left: 22.4%;
+        align-items: center;
         padding-bottom: 4em;
     }
 
@@ -782,6 +785,7 @@ footer p{
     }
     .section5{
        padding: 1em;
+       gap: 2em;
     }
 
     .profile {
@@ -912,6 +916,7 @@ footer p{
 
     .nav_bottom{
         gap: 2em;
+        margin-left: 1em !important;
     }
     .nav_bottom h1{
         margin-left: 0 !important;
@@ -946,6 +951,9 @@ footer p{
     .intro h1 {
         font-size: 2.5em;
         text-align: center;
+    }
+    .s1_div{
+        padding-top: 1em;
     }
 
     .intro h2, .intro h3 {
@@ -1006,5 +1014,7 @@ footer p{
         gap: 30%;
     }
 
-
+    .nav_bottom{
+        margin-left: 5em;
+    }
 }
