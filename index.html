@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nouilles</title>
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400&display=swap"rel="stylesheet"> <!-- Lien pour importer les polices de Google Fonts -->
 </head>
 <body>
@@ -25,7 +28,7 @@
         <h1>HI!</h1>
         <h2>I am Ze</h2>
         <h2>Barber</h2>
-        <h3>FRONTEND WEB DESIGNER</h3>
+        <h4>FRONTEND WEB DESIGNER</h4>
         <button>Visit My Works</button>
     </div>
 </header>
@@ -34,7 +37,10 @@
     <div class="s1_div">
         <p class="s1_line">Who Am I ?</p>
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, consectetur consequuntur facere error explicabo necessitatibus! Impedit, eligendi. Illum doloribus distinctio ratione, et voluptate suscipit dolores necessitatibus nisi quae vitae. Aliquam autem, odio error esse enim, fuga numquam explicabo inventore quam consequuntur officiis! Ratione, dolorum consequatur! Soluta odio ducimus asperiores quibusdam sequi perferendis ratione dolore! Maxime dignissimos dolorem voluptates? Sapiente, dolores. Eaque dolor non libero sequi a voluptas fugit fugiat ratione ad debitis? Excepturi iste iure tempora possimus at inventore explicabo distinctio, quia saepe numquam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid ad provident aut fuga animi soluta quae eos non cupiditate voluptates dolorem, doloremque quos dicta
+            quibusdam impedit iure nemo a iste</p>
+        <p class="s1_line2">culpa! Quasi quibusdam hic recusandae delectus velit officiis explicabo voluptatibus! Nemo esse similique, voluptates labore distinctio, placeat explicabo facilis molestias, blanditiis culpa iusto voluptatem ratione eligendi a, quia temporibus velit vero ipsa sint ex voluptatum
+            expedita aliquid! Debitis, nam!</p>
         <button>Download CV</button>
     </div>
 </section>
@@ -44,10 +50,10 @@
         <h2>Service</h2>
     </div>
     <div class="s2_grid">
-        <div><img src="./public/img/pencil-case.svg" alt=""><p class="txt">Adipisicing</p><p class="animation">Labore velit culpa adipisci execpturi consequuntur itaque in nam molestias dolorem iste quod.</p></div>
-        <div><img src="./public/img/responsive.svg" alt=""><p class="txt">Sapiente</p><p class="animation">Labore velit culpa adipisci execpturi consequuntur itaque in nam molestias dolorem iste quod.</p></div>
-        <div><img src="./public/img/toolbox.svg" alt=""><p class="txt">Placeat</p><p class="animation">Labore velit culpa adipisci execpturi consequuntur itaque in nam molestias dolorem iste quod.</p></div>
-        <div><img src="./public/img/analytics.svg" alt=""><p class="txt">Iusto</p><p class="animation">Labore velit culpa adipisci execpturi consequuntur itaque in nam molestias dolorem iste quod.</p></div>
+        <div><img src="./public/img/pencil-case.svg" alt=""><h3 class="txt">Adipisicing</h3><p class="animation">Labore velit culpa adipisci execpturi consequuntur itaque in nam molestias dolorem iste quod.</p></div>
+        <div><img src="./public/img/responsive.svg" alt=""><h3 class="txt">Sapiente</h3><p class="animation">Labore velit culpa adipisci execpturi consequuntur itaque in nam molestias dolorem iste quod.</p></div>
+        <div><img src="./public/img/toolbox.svg" alt=""><h3 class="txt">Placeat</h3><p class="animation">Labore velit culpa adipisci execpturi consequuntur itaque in nam molestias dolorem iste quod.</p></div>
+        <div><img src="./public/img/analytics.svg" alt=""><h3 class="txt">Iusto</h3><p class="animation">Labore velit culpa adipisci execpturi consequuntur itaque in nam molestias dolorem iste quod.</p></div>
     </div>
 </section>
 <section class="section3">
@@ -58,7 +64,7 @@
     <div class="s3_grid">
         <img src="./public/img/folio-1.jpg" alt="">
         <img src="./public/img/folio-2.jpg" alt="">
-        <img src="./public/img/folio-3.jpg" alt="">
+        <img id="s3_cel" src="./public/img/folio-3.jpg" alt="">
     </div>
 </section>
 <section class="section4">
@@ -91,7 +97,7 @@
             <h1 class="price"><sup>$</sup>9.99/Month</h1>
             <button>Subscribe</button>
         </div>
-        <div class="s4_grid_cel">
+        <div class="s4_grid_cel s4_cel">
             <img src="./public/img/startup.svg" alt="">
             <h2>Premium</h2>
             <p>accusamus reprehenderit</p>
@@ -142,7 +148,7 @@
             <img src="./public/img/img-1.jpg" alt="pro">
             <div class="s7_txt">
                 <h3>Consectetur adipisicing elit</h3>
-                <p>By: Admin <span>♡</span> 234 <img class="icon_msg" src="./public/img/message_icon.PNG" alt=""> 123</p>
+                <p>By: Admin<span>&nbsp;&nbsp; ♡</span> 234 <img class="icon_msg" src="./public/img/message_icon.PNG" alt=""> 123</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt nemo asperiores officia corporis, reprehenderit excepturi in placeat deleniti cum quam quod iste vitae, veniam iusto numquam id voluptatem. Dolore, ea porro.</p>
                 <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repundiandae.</b></p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officia ad vel eius maxime totam laboriosam fugit temporibus quia quisquam!</p>
@@ -152,9 +158,11 @@
         <di class="profile">
             <img src="./public/img/img-2.jpg" alt="pro">
             <div class="s7_txt">
-                <h3>Consectetur adipisicing elit</h3>
-                <p>By: Admin <span>♡</span> 456 <img class="icon_msg" src="./public/img/message_icon.PNG" alt=""> 264</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti deserunt nemo asperiores officia corporis, reprehenderit excepturi in placeat deleniti cum quam quod iste vitae, veniam iusto numquam id voluptatem. Dolore, ea porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, soluta consectetur porro illo nulla obcaecati reprehenderit excepturi commodi maiores, aspernatur aperiam laudantium? Debitis quasi eos, doloremque assumenda veniam quo aliquid?</p>
+                <h3>Excalibo illo</h3>
+                <p>By: Admin<span>&nbsp;&nbsp; ♡</span> 456 <img class="icon_msg" src="./public/img/message_icon.PNG" alt=""> 264</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae
+                    ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae?
+                    Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
                 <p><a href="">Read more »</a></p>
             </div>
         </div>
@@ -179,7 +187,7 @@
     </div>
 <section class="section9">
     <div>
-        <textarea name="" id="" placeholder="Write Something"></textarea>
+        <textarea name="" id="" placeholder=" Write Something"></textarea>
     </div>
     <div>
         <button>Send Message</button>

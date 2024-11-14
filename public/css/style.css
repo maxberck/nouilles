@@ -2,9 +2,122 @@
 *{
     margin: 0;
 }
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
 @font-face {/* déclare une police personnalisée */
     font-family: 'Arlon Black';
     src: url('/public/font/arlon-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {/* déclare une police personnalisée */
+    font-family: 'Arlon Bold';
+    src: url('/public/font/arlon-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,11 +140,10 @@ header{
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 1)), /*Gradient pour reproduire le fondu avec l'image en fond*/
     url("../img/header.jpg");
     background-position-y: 37%;
-    background-position: center;
     background-size: cover;
     height: 40em;
     filter: hue-rotate(18deg); /* applique une teinte */
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
 }
 
 
@@ -40,7 +152,7 @@ nav{
     display: flex; /* affiche les éléments en ligne */
     color: white;
     gap: 27em; /* espace entre les éléments */
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     font-weight: bolder;
     justify-content: center;
     align-items: center;
@@ -66,25 +178,30 @@ nav h1{ /* placement du titre nouille */
     display: grid;
     justify-content: center;
     padding-top: 10em;
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
 }
 /* mise en forme des textes */
 .intro h1{
     font-weight: 800;
     color: #585960;
     font-size: 3em;
+    font-family: 'Arlon Black';
 }
 .intro h2{
     font-size: 5em;
     font-weight: 900;
     color: #42464D;
+    line-height: 1.2em;
+    font-family: 'Arlon Black';
 }
 
-.intro h3{
+.intro h4{
     font-weight: 100;
     color: #3C3C3E;
-    letter-spacing: .5em;
+    letter-spacing: .3em;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    padding-top: .2em;
 }
 /* mise en forme du boutton */
 .intro button{
@@ -94,8 +211,9 @@ nav h1{ /* placement du titre nouille */
     border-radius: 2em;
     border: none;
     width: 9em;
-    height: 3em;
+    height: 2.7em;
     margin-top: 2em;
+    font-size: 1em;
 }
 
 
@@ -113,28 +231,35 @@ nav h1{ /* placement du titre nouille */
 
 .s1_div{
     width: 50%;
+    padding-top: 3em;
+}
+.s1_line2{
+    padding-bottom: 2em;
 }
 .s1_div p{
     color: #6F6F6F;
-    padding-bottom: 2em;
+    font-size: .95em;
 }
 .s1_line{
     line-height: 80%;
+    padding-bottom: 2em;
 }
+
 .s1_div h2{
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     color: #695AA6;
     font-size: 2em;
     line-height: 0%;
-    padding-bottom: 2em;
+    padding-bottom: 1.3em;
 }
 .s1_div button{ /* bouton de téléchargement dans la section 1 */
     border: #7365ab solid 1px;
     border-radius: 2em;
-    height: 3em;
-    width: 10em;
+    height: 2.5em;
+    width: 8em;
     background: none;
     color: #695AA6;
+    margin-top: .5em;
 }
 
 
@@ -144,7 +269,7 @@ nav h1{ /* placement du titre nouille */
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     padding-top: 10em;
 }
 .section2 h2{
@@ -157,11 +282,13 @@ nav h1{ /* placement du titre nouille */
     font-family: 'Poppins', sans-serif;
     font-size: 100;
     color: #6F6F6F;
+    padding-bottom: .5em;
 }
 .s2_txt h2{
     color: #695AA6;
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     padding-bottom: 2em;
+    font-size: 2.3em;
 }
 /* section 2 grid */
 .s2_grid {
@@ -172,32 +299,39 @@ nav h1{ /* placement du titre nouille */
     align-items: center;
 }
 
-.s2_grid > div {/* on crée des carrés dans lequel on met une image et un texte qui dépasse du carré qu'on va cacher */
+.s2_grid > div { /* On crée des carrés dans lequel on met une image et un texte qui dépasse du carré qu'on va cacher */
     border: #DEE2E6 solid 1px;
-    height: 13em;
-    width: 13em;
+    height: 250px; 
+    width: 250px; 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #695AA6;
-    font-size: larger;
-    gap: 1.5em;
+    font-size: 18px;
+    letter-spacing: -.3px;
+    gap: 24px; 
     margin: 0;
-    overflow: hidden; /* cache le texte */
+    overflow: hidden; /* Cache le texte */
 }
 
-.s2_grid img { /* mise en forme de l'image */
-    margin-top: 8em;
-    height: 25%;
-    transition: transform 2s; /* on inclue l'image dans la transition */
-    position: relative; /* on donne une position afin de pouvoir utiliser la propriété top */
-    top: 1.5em;
+.s2_grid img { /* Mise en forme de l'image */
+    margin-top: 150px; /* Augmenté pour s'assurer que l'image est bien placée */
+    height: 25%; 
+    transition: transform 2s; /* On inclut l'image dans la transition */
+    position: relative; /* On donne une position afin de pouvoir utiliser la propriété top */
+    top: 32px; /* Augmenté pour correspondre à la nouvelle disposition */
+}
+.s2_grid h3{
+    padding-top: 24px;
+    transition: transform 2s;
+    font-weight: 100;
 }
 
 .s2_grid p {
-    padding-top: 1em;
-    transition: transform 2s; /* on inclue le texte dans la transition et on précise qu'on veut un changement sur la propriété transform*/
+    padding-top: 24px;
+    transition: transform 2s;
+     /* On inclut le texte dans la transition et on précise qu'on veut un changement sur la propriété transform */
 }
 
 .animation {
@@ -206,20 +340,20 @@ nav h1{ /* placement du titre nouille */
     font-size: smaller;
     color: #6F6F6F;
     text-align: center;
+    margin-top: 50px;
 }
-/* animation des 3 éléments indidivduellement */
+/* Animation des 3 éléments individuellement */
 .s2_grid > div:hover img {
-    transform: translateY(-10.5em);
+    transform: translateY(-185px); 
 }
 
 .s2_grid > div:hover .txt {
-    transform: translateY(-10.5em);
+    transform: translateY(-185px);
 }
+
 .s2_grid > div:hover .animation {
-
-    transform: translateY(-10.5em);
-}
-
+    transform: translateY(-185px); 
+} 
 /* section 3 */
 
 .section3{
@@ -228,10 +362,12 @@ nav h1{ /* placement du titre nouille */
 }
 
 /* section 3 texte */
-.s3_txt{
+.s3_txt h2{
     padding-bottom: 2em;
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     color: #695AA6;
+    font-size: 2.3em;
+    
 }
 .s3_txt p{
     font-family: 'Poppins', sans-serif;
@@ -255,15 +391,15 @@ nav h1{ /* placement du titre nouille */
 
 .section4{
     text-align: center;
-    padding-top: 10em;
-    line-height: 2.5;
+    padding-top: 9em;
 }
 
 /* section 4 texte */
-.s4_txt{
+.s4_txt h2{
     padding-bottom: 2em;
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     color: #695AA6;
+    font-size: 2.3em;
 }
 .s4_txt p{
     font-family: 'Poppins', sans-serif;
@@ -277,23 +413,24 @@ nav h1{ /* placement du titre nouille */
     grid-template-columns:  1fr 1fr 1fr; /* grille de 3 colonnes */
     width: 80%;
     padding-left: 10%;
+    line-height: 2.5;
 
 }
 
 .s4_grid img{
-    height: 10%;
+    height: 13%;
 }
 
 /* section 4 intérieur des cel du grid */
 .s4_grid_cel{
     border: #DEE2E6 solid 1px;
-    height: 35em;
+    height: 37em;
     align-content: center;
 }
 
 .s4_grid_cel h2{
     color: #695AA6;
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     font-size: 2em;
 }
 
@@ -306,6 +443,7 @@ nav h1{ /* placement du titre nouille */
 .price{
     font-size: 2em;
     color: #4D5053;
+    font-weight: 500;
 }
 
 .s4_grid_cel button{
@@ -320,7 +458,7 @@ nav h1{ /* placement du titre nouille */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20%;
+    gap: 28%;
     height: 8em;
     background-color: #695AA6;
     margin-top: 5em;
@@ -328,21 +466,24 @@ nav h1{ /* placement du titre nouille */
 }
 
 .section5 h3{
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
+    padding-bottom: .6em;
 }
 .section5 button{
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     letter-spacing: .1em; /* espacement entre les lettres */
-    font-size: 1em;
+    font-size: 1.1em;
     height: 3em;
     width: 6em;
     border-radius: 2px;
     border: none;
     background-color: #fff;
+    margin-right: 10em;
 }
 /* section 6 */
 .section6{
     text-align: center;
+    padding-bottom: 5em;
 }
 
 .s6_txt{
@@ -352,8 +493,9 @@ nav h1{ /* placement du titre nouille */
 
 .s6_txt h2{
     padding-bottom: 2em;
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     color: #695AA6;
+    font-size: 2.3em;
 }
 .s6_txt p{
     font-family: 'Poppins', sans-serif;
@@ -387,9 +529,10 @@ nav h1{ /* placement du titre nouille */
 
 .p_men p, .p_woman p{
     padding-bottom: 1em;
+    color: #6F6F6F;
 }
 .p_men strong, .p_woman strong{
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     color: #695AA6;
 }
 
@@ -400,20 +543,22 @@ nav h1{ /* placement du titre nouille */
 }
 .s7_title{
     padding-top: 5em;
-    padding-bottom: 1em;
 }
 
 .s7_title h2{
     padding-bottom: 2em;
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     color: #695AA6;
+    font-size: 2.3em;
 }
 .s7_title p{
     font-family: 'Poppins', sans-serif;
     font-size: 100;
     color: #6F6F6F;
 }
-
+b{
+    font-weight: 600;
+}
 .s7_grid {
     display: flex;
     flex-direction: column;
@@ -423,10 +568,10 @@ nav h1{ /* placement du titre nouille */
 }
 /* profils en display grid */
 .profile {
-    display: grid; 
-    grid-template-columns: 1fr 2fr;
+    display: flex; 
     text-align: left;
     border: #DEE2E6 solid 1px;
+    gap: 2em;
 }
 .profile span{ /*coeur en rose */
     color:#F68CAF;
@@ -443,14 +588,15 @@ nav h1{ /* placement du titre nouille */
 }
 
 .profile p {
-    font-size: small; 
+    font-size: .9em; 
+    color: #6F6F6F;
 }
 
 .profile h3{
-    font-family: 'Arlon Black', sans-serif;
+    font-family: 'Arlon Bold', sans-serif;
     color: #695AA6;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
 }
 
 .s7_txt>p{
@@ -465,9 +611,11 @@ nav h1{ /* placement du titre nouille */
     padding-top: 4em;
 }
 .s8_txt h2{
-    padding-bottom: 2em;
-    font-family: 'Arlon Black', sans-serif;
+    padding-bottom: 1em;
+    font-family: 'Arlon Bold', sans-serif;
     color: #695AA6;
+    font-size: 2.3em;
+
 }
 .s8_txt p{
     font-family: 'Poppins', sans-serif;
@@ -476,20 +624,23 @@ nav h1{ /* placement du titre nouille */
 }
 .nav_bottom{
     display: flex;
-    justify-content: center;
-    font-family: 'Arlon Black', sans-serif;
-    gap: 28em;
-    padding-bottom: 2em;
+    align-content: center;
+    font-family: 'Arlon Bold', sans-serif;
+    gap: 34em;
+    padding-bottom: 1em;
 }
 
 .nav_bottom h1{
     color: #695AA6;
+    font-size: 2em;
+    margin-left: 3em;
 }
 
 .nav_bottom2 {
     display: flex;
-    gap: 2em;
+    gap: 1.5em;
     color: #6C757D;
+    padding-top: 1em;
 }
 
 .cross{/* croix des navbar */
@@ -497,17 +648,21 @@ nav h1{ /* placement du titre nouille */
 }
 /* scetion 9 */
 .section9{
-    padding-top: 2em;
-    border-top: #DEE2E6 solid 1px;
+    padding-top: .5em;
+    border-top: #F9F9FA solid 1px;
     padding-bottom: 2em;
 }
 
 .section9 textarea{
     width: 50%;
-    height: 12em;
+    height: 8em;
     border-radius: .5em;
     border-color: #CED4DA;
     background-color: #FCFCFC;
+    font-family: 'Poppins', sans-serif;
+    padding: .6em;
+    font-size: 1em;
+
 }
 
 .section9 button{
@@ -515,7 +670,11 @@ nav h1{ /* placement du titre nouille */
     border: #695AA6 solid 1px;
     border-radius: 3px;
     background-color: #fff;
-    height: 2em;
+    height: 2.5em;
+    width: 8em;
+    margin-top: 1.7em;
+    margin-bottom: 2em;
+    font-size: 1em;
 }
 
 /* footer */
@@ -532,12 +691,15 @@ footer{
 
 footer p{
     line-height: 3em;
+    color: #6C757D;
+
 }
 
 .footer_logo{
     display: flex;
     height: 2.5em;
     gap: .3em; 
+
 }
 
 
@@ -549,7 +711,7 @@ footer p{
 
     }
     nav {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: .5em;
         font-size: .8em;
         text-align: center;
@@ -573,12 +735,26 @@ footer p{
         grid-template-rows: repeat(4fr);
 
     }
-    .s3_grid, .s4_grid{
+    .s3_grid{
         display: flex;
         flex-direction: column;
-        width: 80%;
         justify-content: center;
-        align-items: center;
+        width: 80%;
+        padding-left: 15%;
+    }
+    #s3_cel{
+        grid-column: span 2;
+        justify-self: center;
+        width: 90% !important;
+    }
+
+    .s4_grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding-left: 22.4%;
+        padding-bottom: 4em;
     }
 
     .s4_grid_cel {
@@ -586,7 +762,17 @@ footer p{
         line-height: 2.5em;
         width: 15em;
     }
-    
+    .s4_cel{
+        grid-column: span 2;
+        justify-self: center;
+        width: 15em !important;
+    }
+
+    .section5{
+        font-size: small;
+        margin: 0;
+        padding-right: 10%;
+    }
     .price{
         margin-bottom: 1em;
     }
@@ -597,10 +783,17 @@ footer p{
     .section5{
        padding: 1em;
     }
+
     .profile {
         grid-template-columns: 1fr;
     }
+    .section7{
+        margin-bottom: 0;
+    }
 
+    .s8_txt{
+        margin-bottom: -2em;
+    }
     .nav_bottom{
         display: block;
         flex-direction: column;
@@ -655,6 +848,7 @@ footer p{
     .section1 {
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 1em;
     }
 
@@ -685,20 +879,42 @@ footer p{
         bottom: -0.1em;
     }
 
-    .s6_grid {
-        flex-direction: column;
-        gap: 2em;
+    .section5{
+        padding-left: 5em;
     }
 
+    .section5 button{
+        margin-right: 5em;
+    }
+
+    .s6_grid {
+        flex-direction: column;
+        padding-left: 25%; /* pour centrer la div */
+        width: 50%;
+        gap: 4em;
+    }
+
+    .p_men p, .p_woman p{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
     .profile{
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .profile img[alt="pro"]{
         width: 100%;
     }
+    .s7_txt{
+        padding-left: .5em;
+    }
 
     .nav_bottom{
         gap: 2em;
+    }
+    .nav_bottom h1{
+        margin-left: 0 !important;
     }
     .nav_bottom2{
         gap: 1em;
@@ -742,14 +958,29 @@ footer p{
         align-items: center;
         justify-items: center;
         gap: 4em;
-       
+        row-gap: 10em;
 
     }
-
     .s3_grid, .s4_grid {
         grid-template-columns: 1fr 1fr;
         row-gap: 2.5em;
+        gap: 2.5em;
     }
+    /* mettre la troisième colonne au milieu */
+    #s3_cel {
+        justify-self: center;
+        grid-column: span 2;
+        width: 43.87% ;
+        margin-right: 7%;
+        margin-top: 2.5em;
+    }
+    /* mettre la troisième colonne au milieu */
+    .s4_cel {
+        justify-self: center;
+        grid-column: span 2;
+        width: 47.315%;
+    }
+
     .s4_grid{
         column-gap: 2.5em;
     }
@@ -757,9 +988,15 @@ footer p{
     .nav_bottom{
         gap: 10em;
     }
+    .nav_bottom h1{
+        margin-left: 1em;
+    }
 
     .s7_grid {
         align-items: center;
+    }
+    .s7_txt{
+        font-size: .85em;
     }
 
     .section9 textarea {
